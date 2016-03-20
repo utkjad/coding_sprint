@@ -7,6 +7,7 @@ Also, it does follwing-
 import csv
 import collections as clt
 import operator 
+from operator import itemgetter
 
 class Inventory(object):
 	"""class managing Inventory for Products"""
@@ -86,7 +87,7 @@ class Inventory(object):
 			range_of_days - tuple of [start, end]
 
 		Returns:
-			Dictionary containing zipcode mapped with revenue within open range of days
+			List containing zipcode mapped with revenue within open range of days
 		"""
 		zipcode_revenue = clt.defaultdict(int)
 		
@@ -96,8 +97,30 @@ class Inventory(object):
 		for transaction in self.sales:
 			if transaction['day'] in range(start_day, end_day + 1):
 				zipcode_revenue[transaction['zipcode']] += (transaction['quantity_sold'] * self.products[transaction['product_id']])
-		return zipcode_revenue
+		return [{'zipcode': x[0], 'revenue':x[1] } for x in zipcode_revenue.iteritems()]
 
+	def depletion_rate(self, ingredient):
+		""" Calculates the depletion rate of the ingredient w.r.t. ingredient history only
+
+		Arguments:
+			ingredient - ID of ingredient
+
+		Returns:
+			Rate of depletion of given ingredient
+		"""
+		inventory_record = []
+		# ingredient_id,day,units_in_inventory
+		for example in self.ingredients:
+			if exmaple['ingredient_id'] == ingredient:
+				inventory_record.append({'day': example['day'],
+					'units_in_inventory':exmaple['units_in_inventory']})
+
+		inventory_sorted_by_timeline = [sorted(inventory_record, key=itemgetter('day'), reverse = True)]
+
+		# Now, Split history into time intervals and get the average
+
+		for day_transaction in inventory_sorted_by_timeline:
+			
 
 if __name__ == '__main__':
 	i = Inventory()
