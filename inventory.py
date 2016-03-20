@@ -38,7 +38,7 @@ class Inventory(object):
 			self.sales = map(lambda x: {'product_id': x['product_id'],
 				'day': int(x['day']),
 				'quantity_sold': int(x['quantity_sold']),
-				'zipcode': int(x['zipcode'])},temp_sales)
+				'zipcode': x['zipcode']},temp_sales)
 
 		# Read mapping
 		with open('mapping.csv', 'r') as mapping_fp:
@@ -80,8 +80,26 @@ class Inventory(object):
 			# print x
 		return result
 
-	def zipcode_revenue_matching
+	def zipcode_revenue_mapping(self, range_of_days):
+		""" Method mapping zipcode with range of days [start, end]
+		Arguments:
+			range_of_days - tuple of [start, end]
+
+		Returns:
+			Dictionary containing zipcode mapped with revenue within open range of days
+		"""
+		zipcode_revenue = clt.defaultdict(int)
+		
+		start_day = range_of_days[0]
+		end_day =  range_of_days[1]
+
+		for transaction in self.sales:
+			if transaction['day'] in range(start_day, end_day + 1):
+				zipcode_revenue[transaction['zipcode']] += (transaction['quantity_sold'] * self.products[transaction['product_id']])
+		return zipcode_revenue
+
 
 if __name__ == '__main__':
 	i = Inventory()
-	print i.get_top_products()
+	# print i.get_top_products()
+	print i.zipcode_revenue_mapping((0,5))
