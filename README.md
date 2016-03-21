@@ -1,8 +1,8 @@
-Bevspot Coding Test
+--- Coding Test
 ========
 This project is intended to be open-ended and test your creativity and problem-solving skills. Feel free to use any programming language, however please make sure that your solution doesn't use external libraries, other than those included in the language's standard library. You may also use a library for CSV parsing. You should not use a database for this problem. We should be able to run the program you provide to us without additional installation steps.
 
-Bevspot builds software for bars and restaurants to manage their inventory and track sales of their products. We've put together a zip file of fake sample data that includes:
+--- builds software for bars and restaurants to manage their inventory and track sales of their products. We've put together a zip file of fake sample data that includes:
 
 * A list of ingredients and their minimum order quantities and price per unit (ingredients.csv)
 * A list of products and their prices (products.csv)
