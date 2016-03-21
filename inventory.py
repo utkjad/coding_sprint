@@ -58,29 +58,29 @@ class Inventory(object):
 		# print ("HARRY POTTER")
 		# print self.inventory_history
 
-	def get_top_products(self, rank=5, day=9):
+	def get_top_products(self, limit=5, day=9):
 		""" Method which gives list of n top selling products on a particular day.
 		Arguments:
-			rank - Rank limit, include product if its rank is >= given rank
+			limit - Limit for ranks of products 
 			day - Particular day on which revenue is to be calculated
 
 		Returns:
-			result - List of dictonary of product and respective revenue
+			result - List of dictonary of product and respective revenue within given limit
 			Example - [{'product': {'price': 14, 'id': '827393e5'},'revenue': 1330},
 				{'product': {'price': 14, 'id': '4b7c45dd'}]
 		"""
 		product_revenue = clt.defaultdict(int)
 		for transaction in self.sales:
 			if transaction['product_id'] in self.products.keys() and transaction['day'] == day:
-				product_revenue[transaction['product_id']] = product_revenue[transaction['product_id']] + (transaction['quantity_sold'] * self.products[transaction['product_id']])
+				product_revenue[transaction['product_id']] = product_revenue[transaction['product_id']] +\
+				(transaction['quantity_sold'] * self.products[transaction['product_id']])
 			else:
 				continue
+
 		result = []
 		for product in sorted(product_revenue.items(), key=operator.itemgetter(1), reverse = True):
 			result.append({'product' : {'id' : product[0], 'price' : self.products[product[0]]}, 'revenue': product[1]})
-			# x = {'product' : {'id' : product[0], 'price' : self.products[product[0]]}, 'revenue': product[1]}
-			# print x
-		return result[:rank]
+		return result[:limit]
 
 	def __get_product_revenues_till_now(self):
 		product_revenue = clt.defaultdict(int)
@@ -165,7 +165,7 @@ class Inventory(object):
 		# print "rate_of_depletion" + str(rate_of_depletion)
 		return rate_of_depletion
 
-	def profile_ingredients(self):
+	def __profile_ingredients(self):
 		""" 
 		"""
 		# Filter all ingredients which are already full. May be not. This is because of min_order_size is minimum, 
@@ -205,17 +205,42 @@ class Inventory(object):
 			cost_factor = self.ingredients[ingredient]['price_per_unit']
 
 			profiler_ingredient.append({'ingredient': ingredient,
-				'rate':self. get_depletion_rate(ingredient),
+				'depletion_rate':self. get_depletion_rate(ingredient),
 				'usability': usability,
 				'revenue_factor': revenue_factor,
 				'cost_factor': cost_factor})
 		return profiler_ingredient
-		
+	
+	def get_top_ingredients_to_order(self, limit):
+		"""
+		"""
+		profiler = self.__profile_ingredients()
 
+		# Normalize all paramters. Here, we are not considering any weight for any parameter. 
+		# Every parameter is of same weight and normalized in [0,1]
+		max_depletion_rate = float(max([x['depletion_rate'] for x in profiler]))
+		max_usability = float(max([x['usability'] for x in profiler]))
+		max_revenue_factor = float(max([x['revenue_factor'] for x in profiler]))
+		max_cost_factor = float(max([x['cost_factor'] for x in profiler]))
+
+		ranked_ingredients = {}
+		for record in profiler:
+			normalized_depletion_rate = float(record['depletion_rate'])/ max_depletion_rate
+			normalized_usability = float(record['usability'])/ max_usability
+			normalized_revenue_factor = float(record['revenue_factor'])/ max_revenue_factor
+			normalized_cost_factor = float(record['cost_factor'])/ max_cost_factor
+			ranked_ingredients[record['ingredient']] =  (normalized_depletion_rate *
+				normalized_usability *
+				normalized_revenue_factor)/normalized_cost_factor
+		# for i,j in sorted(ranked_ingredients.items(), key=operator.itemgetter(1), reverse = True):
+		# 	print i + " " + str(j)
+		return sorted(ranked_ingredients.items(), key=operator.itemgetter(1), reverse = True)[:limit]
+			
 if __name__ == '__main__':
 	i = Inventory()
-	# print i.get_top_products()
-	# print i.zipcode_revenue_mapping((0,5))
-	# print i.get_depletion_rate('4e7ddd38')
-	for i in i.profile_ingredients():
-		print i
+	print i.get_top_products(limit=5, day=4)
+
+	print 
+
+	print i.zipcode_revenue_mapping((1,5))
+	# print i.get_top_ingredients_to_order(10)
