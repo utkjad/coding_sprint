@@ -1,0 +1,19 @@
+1. Top five selling products on day four
+{'product': {'price': 14, 'id': '5e586d50'}, 'revenue': 1148}
+{'product': {'price': 14, 'id': '3fa62a8f'}, 'revenue': 1092}
+{'product': {'price': 12, 'id': 'f1e49897'}, 'revenue': 1080}
+{'product': {'price': 14, 'id': '7f74be54'}, 'revenue': 1022}
+{'product': {'price': 14, 'id': '63f0cc3f'}, 'revenue': 1008}
+
+
+2. Top ten ingredients the bar should order next
+b263f6ee
+df6b93c4
+d540d1df
+ab29b24e
+ff66ca02
+5657b51f
+97ca1237
+cb8e3732
+4e7ddd38
+941f4f3c

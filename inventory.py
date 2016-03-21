@@ -7,6 +7,7 @@ Also, it does follwing-
 import csv
 import collections as clt
 import operator 
+import sys
 from operator import itemgetter
 
 class Inventory(object):
@@ -231,7 +232,7 @@ class Inventory(object):
 		generating high revenue, constantly depleting and cheap should have high rank
 
 		Returns:
-			A list of 
+			A list of top ingredients to buy
 		"""
 		profiler = self.__profile_ingredients()
 
@@ -256,8 +257,15 @@ class Inventory(object):
 			key=operator.itemgetter(1), reverse = True)[:limit]]
 		return sorted_list
 
-
+# Entry level code
 if __name__ == '__main__':
+	sys.stdout=open("output.txt","w")
 	i = Inventory()
-	print i.get_top_products(limit=5, day=4)
-	print i.get_top_ingredients_to_order(10)
+	print("1. Top five selling products on day four")
+	for product in i.get_top_products(limit=5, day=4):
+		print(product)
+	print
+	print 
+	print("2. Top ten ingredients the bar should order next")
+	for ingredient in i.get_top_ingredients_to_order(10):
+		print(ingredient)

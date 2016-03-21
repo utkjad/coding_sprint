@@ -35,3 +35,9 @@ Day nine's highest revenue products, and their revenue:
       { product: { id: '03388d71', price: 14 }, revenue: 1078 },
       { product: { id: '93588de2', price: 13 }, revenue: 1014 },
       { product: { id: 'cb807f20', price: 13 }, revenue: 975 } ]
+
+------------------------------------------------------------------------
+EXPLANATION AND REMARKS
+------------------------------------------------------------------------
+1. 3_relationships.jpeg - diagram expressing the relationships of the data
+2. output.txt - contains output of the question 1 and question 5
