@@ -239,8 +239,6 @@ class Inventory(object):
 if __name__ == '__main__':
 	i = Inventory()
 	print i.get_top_products(limit=5, day=4)
-
 	print 
-
 	print i.zipcode_revenue_mapping((1,5))
-	# print i.get_top_ingredients_to_order(10)
+	print i.get_top_ingredients_to_order(10)
