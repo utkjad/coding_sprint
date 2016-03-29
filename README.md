@@ -1,8 +1,8 @@
---- Coding Test
+Bevspot Coding Test
 ========
 This project is intended to be open-ended and test your creativity and problem-solving skills. Feel free to use any programming language, however please make sure that your solution doesn't use external libraries, other than those included in the language's standard library. You may also use a library for CSV parsing. You should not use a database for this problem. We should be able to run the program you provide to us without additional installation steps.
 
---- builds software for bars and restaurants to manage their inventory and track sales of their products. We've put together a zip file of fake sample data that includes:
+Bevspot builds software for bars and restaurants to manage their inventory and track sales of their products. We've put together a zip file of fake sample data that includes:
 
 * A list of ingredients and their minimum order quantities and price per unit (ingredients.csv)
 * A list of products and their prices (products.csv)
@@ -37,7 +37,18 @@ Day nine's highest revenue products, and their revenue:
       { product: { id: 'cb807f20', price: 13 }, revenue: 975 } ]
 
 ------------------------------------------------------------------------
-EXPLANATION AND REMARKS
+EXPLANATION
 ------------------------------------------------------------------------
-1. 3_relationships.jpeg - diagram expressing the relationships of the data
-2. output.txt - contains output of the question 1 and question 5
+1. Extra files - 
+	3_relationships.jpeg - diagram expressing the relationships of the data
+	output.txt - contains output of the question 1 and question 5
+2. How to run program
+	python inventory.py
+
+Explaination and proofs
+[Question 1] Answer of the program varifies with example of the output for day nine.
+
+[Question 2] [Question 3] [Question 4] Can be tested by creating subset of given data, and unittesting on the subset patched data. However, considering small scale of data, using small scripts will also help in evaluation of results. 
+
+[Question 5] Ideally, the solution may need a verified testing data or subset of the given data(similar to TREC). We can get list of items purchase on n^th day. Compare it with output for n-1^th day. However, it will require a strong learned model. For small datasets like these, writing small scripts to tweak values can help as well. 
+Example - decreasing values of usability, incresing cost of ingredients; significantly decreased ranking of the same (which is desired behavior)
