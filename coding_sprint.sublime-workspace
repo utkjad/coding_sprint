@@ -1,0 +1,468 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"min",
+				"min_r"
+			],
+			[
+				"spiral",
+				"spiralOrder"
+			],
+			[
+				"max",
+				"max_r"
+			],
+			[
+				"ma",
+				"matrix"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"__",
+				"__hiddenvar"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"settings":
+			{
+				"buffer_size": 0,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 152.0,
+		"last_filter": "install",
+		"selected_items":
+		[
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"indent",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"",
+				"ANF: Delete Current File"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 593.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/media/lumos/Collection/coding_sprint/coding_sprint"
+	],
+	"file_history":
+	[
+		"/home/lumos/Desktop/hw1_utkarshj/README.txt",
+		"/home/lumos/Downloads/1912.csv",
+		"/home/lumos/Desktop/homework1djgjk/Threading Part/1912_consize.txt",
+		"/home/lumos/Desktop/final_1912.txt",
+		"/home/lumos/Desktop/homework1djgjk/Threading Part/final_1912.txt",
+		"/home/lumos/workspace/homework1/target/1912_results.txt",
+		"/home/lumos/Downloads/rootkey.csv",
+		"/home/lumos/Desktop/lets do it/homework1djgjk/1912_consize.txt",
+		"/home/lumos/Desktop/outputfor1912.txt",
+		"/home/lumos/workspace/homework1/src/main/resources/1845.csv",
+		"/home/lumos/Downloads/hi.txt",
+		"/home/lumos/Desktop/output_for1845.txt",
+		"/home/lumos/workspace/homework1/target/1912.txt",
+		"/home/lumos/workspace/homework1/target/homework1-0.0.1-SNAPSHOT/META-INF/MANIFEST.MF",
+		"/home/lumos/Desktop/hitemp.java",
+		"/home/lumos/Downloads/hw1.txt",
+		"/home/lumos/.bashrc",
+		"/home/lumos/.local/share/applications/eclipse.desktop",
+		"/home/lumos/neu/webdev/public/index.html",
+		"/home/lumos/.cache/.fr-XzmGOZ/1763.csv",
+		"/media/lumos/Collection/webdev unsorted/Untitled Document",
+		"/media/lumos/Collection/coding_sprint/coding_sprint/README.md",
+		"/media/lumos/Collection/coding_sprint/coding_sprint/spiral.py",
+		"/media/lumos/Collection/coding_sprint/coding_sprint/Leet_code/group_anagram.py",
+		"/media/lumos/Collection/coding_sprint/coding_sprint/Leet_code/add.py",
+		"/media/lumos/Collection/coding_sprint/coding_sprint/Leet_code/group_anangram.poy",
+		"/home/lumos/.config/sublime-text-3/Packages/LaTeXTools/README.markdown",
+		"/home/lumos/Desktop/untitled.tex",
+		"/media/lumos/Collection/practice/max_subarray_product.py",
+		"/media/lumos/Collection/practice/todo.txt",
+		"/media/lumos/Collection/practice/is_anagram.py",
+		"/media/lumos/hi.py",
+		"/media/lumos/Collection/practice/untitled.py",
+		"/media/lumos/Collection/practice/reverse_by_group_arr.py",
+		"/home/lumos/Webdev/hello_world.js",
+		"/home/lumos/Desktop/hi.py",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_16/midsummer_nights_dream.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_16/midsummer_nights_dream-final.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_16/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_14/midsummer_nights_dream.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_14/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 08/08_01/self-reliance.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_13/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_12/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_11/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_09/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_07/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_08/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_06/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_05/demo.txt",
+		"/home/lumos/Desktop/Ex_Files_UsingRegEx/Exercise Files/Chapter 10/10_04/demo.txt",
+		"/media/lumos/Collection/Ex_Files_UsingRegEx/Exercise Files/Chapter 08/08_05/demo.txt",
+		"/media/lumos/Collection/Ex_Files_UsingRegEx/Exercise Files/Chapter 09/09_03/demo.txt",
+		"/home/lumos/.config/sublime-text-3/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 26.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"lumos",
+			"12:59",
+			":",
+			"Min",
+			"min",
+			"Fibonacci",
+			"(^\\n|^With)",
+			"Min",
+			"^\\n",
+			"Min",
+			"^\\n",
+			"With",
+			"Min",
+			"^\\n",
+			"Min",
+			"^\\n",
+			"Min",
+			"min",
+			"Min",
+			"^\\n",
+			"Min",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"^.* : .*",
+			"^\\n",
+			"^(ASN|USW|TX|KZ|RSM|DA).*",
+			"^\\n",
+			"^CA00.*",
+			"^USC.*",
+			"USC",
+			"Min",
+			"1.2",
+			"Min",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"With",
+			"Without Fibonacci 10 times",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"^(\\d\\.)",
+			"^\\n",
+			"Run",
+			"^\\n",
+			"\\n",
+			"Min",
+			"Run Number",
+			"for(int i=0;i<10; i++){",
+			"JAVA",
+			"JAVA_HOME",
+			"Education",
+			"    		# print ) ",
+			"# print )",
+			"print",
+			"    		# print",
+			"# print",
+			"    		# print",
+			"# print",
+			"matrix\\[([a-z|_|\\]|\\[]*)",
+			")",
+			"str(",
+			"print str",
+			"    		\n",
+			"+ \" \"",
+			"]",
+			"matrix",
+			"0",
+			"matrix",
+			"num1",
+			"bevspot",
+			"https",
+			"(.*)\\nJob ID: (\\d\\d\\d\\d\\d\\d)",
+			"Job ID:",
+			"(?<!\\/)\\d\\d\\d\\d\\d-",
+			"indent",
+			"65",
+			"print",
+			"arg",
+			"^\\[(.*)\\]$",
+			"\\)$",
+			"^\\(",
+			"\\b[aA]\\b (\\w+[ \\-]){0,5}\\b[Mm]an\\b",
+			"\\b[aA]\\b (?:\\w+[ \\-]){0,5}\\b[Mm]an\\b",
+			"Activities",
+			"Related Courses :",
+			"caf\\P{M}",
+			"caf\\u00E9",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?=[^\\d]))",
+			"(?<=\\d)(?=(\\d\\d\\d)+[^\\.](?=[^\\d]))",
+			"(?<=\\d)(?<!\\.)(?=(\\d\\d\\d)+\\.(?=[^\\d]))",
+			"(?<=\\d)(?=(\\d\\d\\d)+\\.(?=[^\\d]))",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?=[^\\d]))",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?=[[^\\d]\\.]))",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?=.*\\.)(?!\\d)",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?=\\.)(?!\\d)",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?![\\d\\.]))",
+			"(?!\\.)(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(?<=!\\.)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(?<!\\.)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=[\\d^\\.])(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(?=(\\d)+(?!\\d))",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(?=(\\d\\d\\d)(?!\\d))",
+			"(?<\\d)(\\d\\d\\d)",
+			"(?<![$])(?=\\d\\d\\.\\d\\d)",
+			"(?<!$)(?=\\d\\d\\.\\d\\d)",
+			"costs",
+			"(?<![$\\d])(?=\\d\\d\\.\\d\\d)",
+			"(?<![$])(\\d\\d\\.\\d\\d)",
+			"$",
+			"(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))",
+			"(?<=\\d)(\\d\\d\\d)+(?!\\d)",
+			"(\\d\\d\\d)(?=!.)",
+			"(\\d\\d\\d)",
+			"(?=\\d\\d\\d)",
+			"\\d{,3}",
+			"(?<![$\\d])(?=\\d+\\.\\d\\d)",
+			"(?<![$\\d])(\\d+\\.\\d\\d)"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"",
+			"\\2 \\1",
+			"\\1 \\2",
+			"(\\1)",
+			"]",
+			"\\n[",
+			"$\\1",
+			"\\1",
+			"$\\1",
+			"\\1\\2",
+			"\\1,",
+			"\\1",
+			"\\1,",
+			",",
+			"$\\1.\\",
+			"$\\1.\\2",
+			"$\\2.\\3"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 0,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"default_dir": "/media/lumos/Collection/coding_sprint/coding_sprint",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 26.0
+	},
+	"input":
+	{
+		"height": 31.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 272.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"pinned_build_system": "",
+	"project": "coding_sprint.sublime-project",
+	"replace":
+	{
+		"height": 48.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"self",
+				"Exercise Files/Chapter 08/08_01/self-reliance.txt"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 175.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
