@@ -4,6 +4,30 @@
 		"selected_items":
 		[
 			[
+				"op",
+				"operand"
+			],
+			[
+				"opera",
+				"operator"
+			],
+			[
+				"digi",
+				"digit"
+			],
+			[
+				"digit",
+				"digit2"
+			],
+			[
+				"oper",
+				"operand"
+			],
+			[
+				"value",
+				"_value"
+			],
+			[
 				"min",
 				"min_r"
 			],
@@ -21,7 +45,7 @@
 			],
 			[
 				"if",
-				"ifmain	if __name__ == '__main__'"
+				"ifmain\tif __name__ == '__main__'"
 			],
 			[
 				"__",
@@ -32,10 +56,48 @@
 	"buffers":
 	[
 		{
+			"contents": "# Just to revise the way graphs work, RIGHT from scratch.\nclass Vertex:\n\tdef __init__(self, value):\n\t\tself._value = value\n\t\tself.adjacent = {}\n\n\t@property\n\tdef value(self):\n\t\treturn self._value\n\t\n\t@value.setter\n\tdef value(self,value):\n\t\tself._value\t= value\n\n\tdef add_neighbour(self, neighbour, weight = 0):\n\t\tself.adjacent[neighbour]= weight\n\n\tdef get_connections(self):\n\t\treturn self.adjacent.keys()\n\n\tdef get_weight(self, neighbour):\n\t\treturn self.adjacent[neighbour]\n\n\tdef __str__(self):\n\t\treturn str(self._value) + ' in str Adjacent Nodes - ' + str([x for x in self.adjacent])\n\n\tdef __repr__(self):\n\t\treturn str(self._value) + '  in repr Adjacent Nodes - ' + str([x for x in self.adjacent])\nd\n\nif __name__ == '__main__':\n\tmain()\nc = Vertex(10)\nd = Vertex(50)\nc.add_neighbour(d.value, 10)\nprint str(c)\nprint str(d)\nprint(repr(c))\n\n",
+			"file": "graphs/primary_operations.py",
+			"file_size": 798,
+			"file_write_time": 131194617619225182,
+			"settings":
+			{
+				"buffer_size": 834,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "random/moody.py",
+			"settings":
+			{
+				"buffer_size": 1285,
+				"line_ending": "Unix",
+				"name": "# Enter your code here. Read input from STDIN. Pri"
+			}
+		},
+		{
+			"contents": "",
 			"settings":
 			{
 				"buffer_size": 0,
 				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "random/find_common_elements_in_sorted_distinct_array.py",
+			"settings":
+			{
+				"buffer_size": 621,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": " [0,0,0] [255,255,255] [255,0,0] [0,255,0] [0,0,255]",
+			"settings":
+			{
+				"buffer_size": 52,
+				"line_ending": "Unix",
+				"name": "[0,0,0] [255,255,255] [255,0,0] [0,255,0] [0,0,25"
 			}
 		}
 	],
@@ -62,8 +124,8 @@
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 152.0,
-		"last_filter": "install",
+		"height": 192.0,
+		"last_filter": "",
 		"selected_items":
 		[
 			[
@@ -179,6 +241,18 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"500000",
+			"()\n",
+			"0",
+			"():\n",
+			"\")",
+			" =",
+			"= ",
+			"str(x._value)",
+			"x.value",
+			"property",
+			"node",
+			"class",
 			"lumos",
 			"12:59",
 			":",
@@ -238,18 +312,18 @@
 			"JAVA",
 			"JAVA_HOME",
 			"Education",
-			"    		# print ) ",
+			"    \t\t# print ) ",
 			"# print )",
 			"print",
-			"    		# print",
+			"    \t\t# print",
 			"# print",
-			"    		# print",
+			"    \t\t# print",
 			"# print",
 			"matrix\\[([a-z|_|\\]|\\[]*)",
 			")",
 			"str(",
 			"print str",
-			"    		\n",
+			"    \t\t\n",
 			"+ \" \"",
 			"]",
 			"matrix",
@@ -294,19 +368,7 @@
 			"(?<=\\d)(?=(\\d\\d\\d)(?!\\d))",
 			"(?<\\d)(\\d\\d\\d)",
 			"(?<![$])(?=\\d\\d\\.\\d\\d)",
-			"(?<!$)(?=\\d\\d\\.\\d\\d)",
-			"costs",
-			"(?<![$\\d])(?=\\d\\d\\.\\d\\d)",
-			"(?<![$])(\\d\\d\\.\\d\\d)",
-			"$",
-			"(?<=\\d)(?=(\\d\\d\\d)+(?!\\d))",
-			"(?<=\\d)(\\d\\d\\d)+(?!\\d)",
-			"(\\d\\d\\d)(?=!.)",
-			"(\\d\\d\\d)",
-			"(?=\\d\\d\\d)",
-			"\\d{,3}",
-			"(?<![$\\d])(?=\\d+\\.\\d\\d)",
-			"(?<![$\\d])(\\d+\\.\\d\\d)"
+			"(?<!$)(?=\\d\\d\\.\\d\\d)"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -341,11 +403,70 @@
 	"groups":
 	[
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
 					"buffer": 0,
+					"file": "graphs/primary_operations.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 834,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								341,
+								341
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 54.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "random/moody.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 1285,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								938,
+								938
+							]
+						],
+						"settings":
+						{
+							"auto_name": "# Enter your code here. Read input from STDIN. Pri",
+							"syntax": "Packages/Python/Python.sublime-syntax",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 324.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				},
+				{
+					"buffer": 2,
 					"semi_transient": false,
 					"settings":
 					{
@@ -362,6 +483,7 @@
 						],
 						"settings":
 						{
+							"auto_name": "",
 							"default_dir": "/media/lumos/Collection/coding_sprint/coding_sprint",
 							"syntax": "Packages/Text/Plain text.tmLanguage"
 						},
@@ -369,7 +491,65 @@
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 0,
+					"stack_index": 4,
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "random/find_common_elements_in_sorted_distinct_array.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 621,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								386,
+								386
+							]
+						],
+						"settings":
+						{
+							"open_with_edit": true,
+							"syntax": "Packages/Python/Python.sublime-syntax"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 3,
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 52,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								1,
+								1
+							]
+						],
+						"settings":
+						{
+							"auto_name": "[0,0,0] [255,255,255] [255,0,0] [0,255,0] [0,0,25",
+							"default_dir": "/media/lumos/Collection/coding_sprint/coding_sprint",
+							"syntax": "Packages/Text/Plain text.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -460,7 +640,7 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 175.0,
+	"side_bar_width": 251.0,
 	"status_bar_visible": true,
 	"template_settings":
 	{

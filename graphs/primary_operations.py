@@ -1,4 +1,5 @@
 # Just to revise the way graphs work, RIGHT from scratch.
+# this is implementation using Adjacency lists
 class Vertex:
 	def __init__(self, value):
 		self._value = value
@@ -12,13 +13,13 @@ class Vertex:
 	def value(self,value):
 		self._value	= value
 
-	def add_neighbour(self, neighbour, weight = 0):
+	def add_neighbour_vertex(self, neighbour, weight = 0):
 		self.adjacent[neighbour]= weight
 
-	def get_connections(self):
+	def get_connected_vertices(self):
 		return self.adjacent.keys()
 
-	def get_weight(self, neighbour):
+	def get_edge_weight(self, neighbour):
 		return self.adjacent[neighbour]
 
 	def __str__(self):
@@ -34,4 +35,4 @@ c.add_neighbour(d.value, 10)
 print str(c)
 print str(d)
 print(repr(c))
-
+print c.adjacent
