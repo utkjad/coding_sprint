@@ -1,5 +1,7 @@
 from collections import defaultdict
+
 class Solution(object):
+
     def findItinerary(self, tickets):
         """
         :type tickets: List[List[str]]
@@ -14,8 +16,7 @@ class Solution(object):
         for key, values in graph.items():
         	graph[key] = sorted(graph[key])
 
-
-        print graph
+        # Given source is JFK, run DFS.
         src = "JFK"
         ans = []
         while(True):
@@ -25,14 +26,9 @@ class Solution(object):
         	else:
 				temp = graph[src].pop(0)
 				src = temp
-
-        print ans
-
-
-
-
+		return ans
 
 if __name__ == '__main__':
 	tickets = [["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
 	s = Solution()
-	s.findItinerary(tickets)
+	print s.findItinerary(tickets)
